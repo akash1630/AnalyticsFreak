@@ -1,0 +1,376 @@
+.body{
+	height: 100%;
+	width: 100%;
+}
+
+.site-header{
+	width: 100%;
+	height: 60px;
+	background-color: #5cb85c;
+	position: fixed;
+	top:0px;
+	z-index : 99999;
+}
+
+.site-logo-div{
+	padding-left: 20px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	height : 60px;
+	width : 80px;
+	display: inline-block;
+}
+
+.site-logo{
+	height: 54px;
+	width : 60px;
+}
+
+.site-title{
+	height : 60px;
+	padding-left: 25px;
+	font-family: "Papyrus";
+	font-size: 22px;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 8px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.logo-phrade{
+	display: block;
+}
+
+.header-right-wrapper{
+	float:right;
+	padding: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.header-signup {
+	color: #5cb85c !important;
+	font-size: 16px;
+	font-family: "Palatino Linotype";
+	vertical-align: middle;
+	display: inline;
+	padding-right: 20px;
+	text-decoration: none !important;
+}
+
+.header-signup:visited{
+	color: #5cb85c;
+}
+
+.header-btn-signin {
+	background: #5cb85c;
+	padding: 6px;
+	border : 1px solid #5cb85c;
+	border-radius : 5px;
+	font-family : "Palatino Linotype";
+	color : #ffffff !important;
+	font-size: 16px;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none !important;
+}
+
+.header-btn-signin:hover {
+    background: #f2f2f2;
+    color : #5cb85c !important;
+    border : 1px solid #5cb85c;
+    border-radius : 5px;
+}
+
+.main-content{
+	width: 100%;
+	height: 100%;
+	background-color: #f2f2f2;
+	margin-top: 60px;
+}
+
+.banner{
+	height : 300px;
+	width : 100%;
+	background-image: url(../images/business-analytics1.jpg);
+}
+
+.banner-line-1{
+	display: block;
+	color:#fff;
+	font-size: 30px;
+	font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.banner-line-2{
+	display: block;
+	color:#fff;
+	font-size: 24px;
+	font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;
+	text-align: center;
+	vertical-align: middle;
+	padding-bottom: 20px;
+}
+
+.banner-btn-row{
+	width : 100%;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 25px;
+}
+
+.btn-1{
+	margin-right: 20px;
+}
+
+.btn-2{
+	margin-left: 10px;
+}
+
+#banner-dd-menu li{
+	cursor: pointer;
+}
+
+.intro-div{
+	width: 100%;
+	display: inline-block;
+}
+
+.intro-title{
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-size: 25px;
+	font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;
+	text-align: center;
+	vertical-align: middle;
+	color: #009933;
+}
+
+.intro-vid-div{
+	display: inline-block;
+	width: 510px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.intro-img{
+	width: 360px;
+	height: 290px;
+}
+
+.intro-vid-text-wrapper{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.intro-vid-title{
+	display: block;
+	color: #4e4e4e;
+	font-size: 20px;
+	font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;
+	padding-left: 30px;
+}
+
+.intro-vid-text{
+	color: #4e4e4e;
+	text-align: justify;
+	padding-top: 20px;
+	font-size: 17px;
+	font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;
+	width : 500px;
+}
+
+.how-div{
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.how-to-segment{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	margin: 25px;
+	padding: 30px 15px 0px 15px;
+	background-color: #fff;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.create-account:before{
+	content: "\f234";
+    font-family: FontAwesome;
+    color: #5cb85c;
+    font-size: 60px;
+}
+
+.study:before{
+	content: "\f044";
+    font-family: FontAwesome;
+    color: #5cb85c;
+    font-size: 60px;
+}
+
+.mentored:before{
+	content: "\f0c0";
+    font-family: FontAwesome;
+    color: #5cb85c;
+    font-size: 60px;
+}
+
+.get-a-job:before{
+	content: "\f201";
+    font-family: FontAwesome;
+    color: #5cb85c;
+    font-size: 60px;
+}
+
+.how-to-segment-text{
+	font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;
+	color: #4e4e4e;
+}
+
+.challenges-news-wrapper{
+	width: 100%;
+	padding-top: 25px;
+}
+
+.challenges-div{
+	width : 60%;
+	text-align: center;
+	display: inline-block;
+}
+
+.challenge-title{
+	width: 100%;
+	padding-top: 25px;
+	font-size: 25px;
+	font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;
+	text-align: center;
+	vertical-align: middle;
+	color: #009933;
+}
+
+.challenge-text-wrapper{
+	display: inline-block;
+}
+
+.challenges-img-div{
+	display: inline-block;
+	width : 100%;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.news-div{
+	width: 36%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.news-title{
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-size: 25px;
+	font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;
+	vertical-align: middle;
+	color: #009933;
+}
+
+.news-a{
+	font-size: 15px;
+	line-height: 20px;
+	text-decoration: none !important;
+	color: #0099ff;
+	cursor: pointer;
+}
+
+.news-a:hover{
+	color: #005c99
+}
+
+.videos-wrapper-div{
+	width: 100%;
+	margin: 30px;
+	text-align: center;
+}
+
+.video-container{
+	display: inline-block;
+	padding: 15px;
+}
+
+.footer{
+	width: 100%;
+	background-color: #525252;
+	padding: 50px 50px 50px 50px;
+	vertical-align: middle;
+	text-align: center;
+	color: #fff;
+}
+
+#footer li{
+	list-style: none;
+}
+
+.footer-div{
+	width: 30%;
+	display: inline-block;
+}
+
+.btn-fb{
+	background-color: #3B5998;
+	color: #ffffff;
+	width: 160px;
+	margin: 5px 0px 5px 0px;
+	border: 1px solid #3B5998;
+}
+
+.btn-fb:hover{
+	background-color: #ffffff;
+	color:#3B5998 ;
+}
+
+.btn-gplus{
+	background-color: #d34836;
+	color: #ffffff;
+	width: 160px;
+	margin: 5px 0px 5px 0px;
+	border: 1px solid #d34836;
+}
+
+.btn-gplus:hover{
+	background-color: #fff;
+	color: #d34836;
+}
+
+.btn-twitter{
+	background-color: #4099FF;
+	color: #ffffff;
+	width: 160px;
+	margin: 5px 0px 5px 0px;
+	border:1px solid #4099FF ;
+}
+
+.btn-twitter:hover{
+	background-color: #fff;
+	color: #4099FF;
+}
+
+.modal-class{
+	position:fixed;
+	top:200px;
+}
+
+
+

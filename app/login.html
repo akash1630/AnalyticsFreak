@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<meta http-equiv = "content-type" content = "text/html; charset=UTF-8"/>
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+<head>
+	<title>Login to AnalyticsFreak</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	<script type="text/javascript" src="scripts/login.js"></script>
+</head>
+<body onload="onTabContentLoad()">
+	<header>
+		<div class="login-header">
+			<ul class="login-header-ul">
+				<a href="index.html" class="login-header-logo">PaperTouch</a>
+			</ul>
+		</div>
+	</header>
+	<div id="login-content-nav" class="login-content-nav">
+		<h1>If its special to you, its worth celebrating!!</h1>
+		<h2>Log in to your account and unlock celebrations!</h2>
+		<div id="tab-panel-container" class="tab-panel-container">
+			<div class="tabbar">
+				<ul class ="ul-tabbar">
+					<li id="login-tab" class="tab" onClick="setActive('login')"> Login</li>
+					<li id="signup-tab" class="tab" onClick="setActive('signup')"> Sign up</li>
+				</ul>
+			</div>
+			<div id="tab-content-area" class="tab-content-area" >
+			</div>
+			<div id="login" class="login-form-container">
+					<form id="loginform" class="login-form" method="post" action="https://www.xyz.com/loginAuthService">
+						<input id="user" class="login-input-field" name="user" placeholder="user/email" type="text">
+						<input id="password" class="login-input-field" name="password" placeholder="password" type="password">
+						<input id="signIn" name="signIn" class="signin-btn-submit" type="submit" value="Sign in to XYZ">
+						<a href="passwordAssist ance.html" class="form-link">forgot password?</a>
+					</form>
+				</div>
+				<div id="signup" class="signup-form-container">
+					<form id="signupform" class="signup-form" method="post" action="https://www.xyz.com/loginAuthService">
+						<input id="username" class="login-input-field" name="username" placeholder="username" type="text" onkeyup="keyupUsername(false)" onblur="keyupUsername(true)">
+						<input id="email" class="login-input-field" name="emailid" placeholder="emailId" type="text" onkeyup="keyupEmail()" onblur="keyupEmail()">
+						<input id="password1" class="login-input-field" name="password1" placeholder="password" type="password" onkeyup="keyupPassword()" onblur="keyupPassword()">
+						<input id="password2" class="login-input-field" name="password2" placeholder="Re-enter password" type="password" onkeyup="keyupPassword2()" onblur="onBlurPassword2()">
+						<input id="city" class="login-input-field" name="city" placeholder="city" type="text">
+						<input id="signUp" name="signUp" class="signup-btn-submit" type="submit" value="Sign in to XYZ">
+					</form>
+				</div>
+		</div>
+		<div id="status" class="status">
+			<span id="status-text" class="status-text"></span>
+		</div>
+	</div>
+</body>
+</html>
