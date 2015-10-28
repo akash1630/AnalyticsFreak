@@ -29,28 +29,35 @@
 			<ul class = "header-right">
 				<a class="header-btn-signin" ng-click="openBlog()"> Blog </a>
 				<a class="header-btn-signin" ng-click="openAbout()"> About </a>
-				<a class="header-btn-signin" ng-click="open('login')">Login</a>
-				<a class="header-btn-signin" ng-click="open('signup')">Sign up</a>
+				<a class="header-btn-signin" ng-click="open('login')">Login / Signup</a>
+				<!--<a class="header-btn-signin" ng-click="open('signup')">Sign up</a> -->
 			</ul>
-			<script type="text/ng-template" id="login.html">
+			<!-- todo : move everything inside script tag to another file -->
+			<script type="text/ng-template" id="login.html"> 			
 			<div id="login-content-nav" class="login-content-nav">
-				<div class="login-header-text">Log in to your account and unlock celebrations!</div>
+				<div class="login-header-text">Login to your account or signup to use services</div>
 				<div id="tab-panel-container" class="tab-panel-container">
 					<div class="tabbar">
 						<ul class ="ul-tabbar">
-							<li id="login-tab" class="tab" onClick="setActive('login')"> Login</li>
-							<li id="signup-tab" class="tab" onClick="setActive('signup')"> Sign up</li>
+							<li id="login-tab" class="tab tab-active" ng-click="setActive('login')"> Login</li>
+							<li id="signup-tab" class="tab" ng-click="setActive('signup')"> Sign up</li>
 						</ul>
 					</div>
-					<div id="tab-content-area" class="tab-content-area" >
-					</div>
-					<div id="login" class="login-form-container">
+					<div id="login" class="login-form-container visible">
 							<form id="loginform" class="login-form" method="post" action="https://www.xyz.com/loginAuthService">
 								<input id="user" class="login-input-field" name="user" placeholder="user/email" type="text">
 								<input id="password" class="login-input-field" name="password" placeholder="password" type="password">
-								<input id="signIn" name="signIn" class="signin-btn-submit" type="submit" value="Sign in to XYZ">
+								<input id="signIn" name="signIn" class="signin-btn-submit" type="submit" value="Login to your account">
 								<a href="passwordAssist ance.html" class="form-link">forgot password?</a>
 							</form>
+							<div id="sns-login" class="sns-login">
+								<a class="btn btn-fb" href="#">
+			  						<i class="fa fa-facebook-square fa-lg"></i> login via fb
+			  					</a>
+			  					<a class="btn btn-gplus" href="#">
+				  					<i class="fa fa-google-plus-square fa-lg"></i> login via g+
+				  				</a>
+							</div>
 						</div>
 						<div id="signup" class="signup-form-container">
 							<form id="signupform" class="signup-form" method="post" action="https://www.xyz.com/loginAuthService">
@@ -58,8 +65,7 @@
 								<input id="email" class="login-input-field" name="emailid" placeholder="emailId" type="text" onkeyup="keyupEmail()" onblur="keyupEmail()">
 								<input id="password1" class="login-input-field" name="password1" placeholder="password" type="password" onkeyup="keyupPassword()" onblur="keyupPassword()">
 								<input id="password2" class="login-input-field" name="password2" placeholder="Re-enter password" type="password" onkeyup="keyupPassword2()" onblur="onBlurPassword2()">
-								<input id="city" class="login-input-field" name="city" placeholder="city" type="text">
-								<input id="signUp" name="signUp" class="signup-btn-submit" type="submit" value="Sign in to XYZ">
+								<input id="signUp" name="signUp" class="signup-btn-submit" type="submit" value="Create your account">
 							</form>
 						</div>
 				</div>
@@ -87,7 +93,8 @@
 			        <li role="menuitem"><a ng-click="open('proffessionalModal')">Working Proffessional</a></li>
 			        <li role="menuitem"><a ng-click="open('DSModal')">Data Scientist</a></li>
 			      </ul>
-			      <script type="text/ng-template" id="studentModal.html">
+			      <!-- todo : move everything inside script tag to another file -->
+			      <script type="text/ng-template" id="studentModal.html">		
 			        <div class="modal-header">
 			            <h3 class="modal-title">For Students!</h3>
 			        </div>

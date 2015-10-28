@@ -1,3 +1,11 @@
+.visible {
+	display: inherit !important;
+}
+
+.hidden{
+	display: none;
+}
+
 .login-modal-class{
 	position:fixed;
 	top:50px;
@@ -86,10 +94,9 @@
 }
 
 .tab-active:hover {
-	background-color: #ffffff ;
-	color : #dd0000;
-	border : 1px solid #dd0000;
-	color : #dd0000;
+	background-color: #449d44;
+	color : #ffffff;
+	border : 1px solid #398439;
 	cursor: pointer;
 	text-decoration: none;
 }
@@ -105,11 +112,10 @@
 }
 
 .login-form-container {
-	display: none;
+	display : none;
 	width : 400px;
 	background-color: #f7f7f7;
 	position: relative;
-	height: 220px;
 	overflow: hidden;
     -webkit-transition: height 0.3s ease-in;
     -moz-transition: height 0.3s ease-in;
@@ -121,6 +127,7 @@
 .login-form{
 	width : 300px;
 	padding : 20px 25px 20px 25px;
+	text-align: center;
 }
 
 .login-input-field {
@@ -139,7 +146,8 @@
 }
 
 .signin-btn-submit {
-	background: #009933;
+	background-color: #5cb85c;
+	border:1px solid #5cb85c;
 	padding: 15px 10px 10px 15px;
 	margin-top: 25px;
 	margin-bottom: 10px;
@@ -153,13 +161,17 @@
 }
 
 .signin-btn-submit:hover {
-	background: #33d633;
+	background-color: #449d44;
+	color : #ffffff;
+	border : 1px solid #398439;
 }
 
 .signup-btn-submit {
-	background: #009933;
+	background-color: #5cb85c;
+	border:1px solid #5cb85c;
 	padding: 15px 10px 10px 15px;
 	margin-bottom: 10px;
+	margin-top: 25px;
 	color : #ffffff;
 	width: 280px;
 	font-size: 16px;
@@ -170,7 +182,9 @@
 }
 
 .signup-btn-submit:hover {
-	background: #33d633;
+	background-color: #449d44;
+	color : #ffffff;
+	border : 1px solid #398439;
 }
 
 .form-link {
@@ -206,7 +220,8 @@
 
 .signup-form {
 	width : 300px;
-	padding : 20px 50px 20px 50px;
+	padding : 20px 25px 20px 25px;
+	text-align: center;
 }
 
 .status {
@@ -215,3 +230,4 @@
 	color : #ffffff;
 	display: none;
 }
+
